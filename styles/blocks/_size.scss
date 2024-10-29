@@ -1,0 +1,148 @@
+.size {
+  &__title {
+    font-family: $font-bebas;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $color-black;
+    margin-bottom: 20px;
+
+    @include on-tablet {
+      margin-bottom: 30px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 66px;
+    }
+  }
+
+  &__text {
+    line-height: 150%;
+  }
+
+  &__content {
+    margin-bottom: 110px;
+
+    @include on-tablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 20px;
+      margin-bottom: 105px;
+    }
+
+    @include on-desktop {
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 30px;
+      margin-bottom: 286px;
+    }
+  }
+
+  &__classified {
+    margin-bottom: 30px;
+
+    @include on-tablet {
+      grid-area: 1 / 1 / 2 / 6;
+      margin-bottom: 38px;
+    }
+
+    @include on-desktop {
+      grid-area: 1 / 1 / 2 / 4;
+      margin: 0;
+      width: 250px;
+    }
+  }
+
+  &__line {
+    display: none;
+    width: 1px;
+    height: 257px;
+    background-color: #d8d8d8;
+
+    @include on-desktop {
+      display: block;
+      grid-area: 1 / 3 / 3 / 4;
+      justify-self: end;
+    }
+  }
+
+  &__photo {
+    margin: 0 -30px 30px;
+
+    @include on-tablet {
+      grid-area: 2 / 4 / 4 / -1;
+      margin: 0 0 20px -75px;
+    }
+
+    @include on-desktop {
+      grid-area: 1 / 7 / 4 / -1;
+      margin: 0 0 0 42px;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__categories {
+    &--large {
+      margin-bottom: 40px;
+    }
+
+    &--small {
+      margin-bottom: 15px;
+    }
+
+    @include on-tablet {
+      &--large {
+        grid-area: 2 / 1 / 3 / 4;
+        margin: 0 100px 50px 0;
+      }
+
+      &--small {
+        grid-area: 3 / 1 / 4 / 4;
+        margin: 0 100px 131px 0;
+      }
+    }
+
+    @include on-desktop {
+      &--large {
+        grid-area: 1 / 4 / 2 / 7;
+        margin: 0 0 40px;
+      }
+
+      &--small {
+        grid-area: 2 / 4 / 3 / 7;
+        margin: 0 0 109px;
+      }
+    }
+  }
+
+  &__name {
+    font-family: $font-bebas;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.15em;
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+
+  &__note {
+    display: flex;
+    gap: 3px;
+    margin-left: -10px;
+
+    @include on-tablet {
+      grid-area: 4 / 1 / 5 / -1;
+    }
+
+    @include on-desktop {
+      grid-area: 3 / 1 / 4 / 7;
+      margin-bottom: 51px;
+    }
+  }
+}

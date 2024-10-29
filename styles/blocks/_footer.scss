@@ -1,0 +1,124 @@
+.footer {
+  &__content {
+    margin-bottom: 30px;
+
+    @include on-tablet {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 117px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__address {
+    display: none;
+
+    @include on-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__title {
+    font-family: $font-bebas;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  &__about-us {
+    display: none;
+
+    @include on-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include on-tablet {
+      gap: 32px;
+    }
+
+    @include on-desktop {
+      gap: 74px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+
+    @include on-tablet {
+      gap: 80px;
+    }
+
+    @include on-desktop {
+      gap: 70px;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+    text-decoration: none;
+    color: $color-black;
+    transition: all 0.3s;
+
+    path {
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: $color-turquoise;
+
+      path {
+        fill: $color-turquoise;
+      }
+    }
+
+    @include on-desktop {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo-link {
+    font-family: $font-bebas;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 150%;
+    color: $color-black;
+  }
+
+  &__copyright-mobile {
+    @include on-tablet {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+
+@keyframes trans {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 0.7px $color-turquoise;
+  }
+
+  50% {
+    color: $color-turquoise;
+  }
+ 
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 0.7px $color-turquoise;
+  }
+}
+
+@keyframes bold {
+  0% {
+    color: $color-turquoise;
+  }
+
+  50% {
+    -webkit-text-stroke: 0.7px $color-turquoise;
+    color: transparent;
+  }
+ 
+  100% {
+    color: $color-turquoise;
+  }
+}
+
+@keyframes price-color {
+  0% {
+    color: $color-dark-gray;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    color: red;
+  }
+  100% {
+    transform: scale(1);
+    color: $color-dark-gray;
+  }
+}
+
+@keyframes button-jump {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes title-scale {
+  0% {
+    transform: scale(0) rotate(0);
+  }
+
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes triangle {
+  from {
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid $color-yellow;
+  }
+  to {
+    border-bottom: 50vh solid transparent;
+    border-left: 70vw solid $color-yellow;
+  }
+}
